@@ -20,12 +20,18 @@ header {
 
 main {
   h3 {
-    padding: 1rem;
+    padding: 1rem 0;
   }
 
+  li {
+    list-style: none;
+  }
 
+  hr {
+    margin-top: 1rem;
+  }
 
-  line-height: 2rem;
+  line-height: 1.5rem;
   padding-left: 1rem;
 
   span {
@@ -39,4 +45,7 @@ main {
 
 footer {
   background-color: rgb(114, 203, 206);
+  min-height: 50px;
+  padding: 1rem;
+  font-size: 2rem;
 }

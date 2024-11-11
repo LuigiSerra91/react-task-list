@@ -79,7 +79,7 @@ export default function AppMain() {
     return (
         <main>
             <section className="completed">
-                <h3>current Task{`(${other_task.length})`}</h3>
+                <h3>current Task{` (${other_task.length})`}</h3>
                 <ul>
                     {other_task.map((task, index) => <li key={index}>
                         <strong>{task.title}</strong>
@@ -90,8 +90,9 @@ export default function AppMain() {
                     </li>)}
                 </ul>
             </section>
+            <hr />
             <section className="other_task">
-                <h3>Completed Task{`(${completed_task.length})`}</h3>
+                <h3>Completed Task{` (${completed_task.length})`}</h3>
                 <ul>
                     {completed_task.map((task, index) => <li key={task.id}>
                         <strong>{task.title}</strong>
