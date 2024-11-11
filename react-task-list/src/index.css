@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  color: black;
+
+}
+
+header {
+  background-color: rgb(114, 203, 206);
+
+
+  h1 {
+    padding: 1rem;
+  }
+}
+
+main {
+  h3 {
+    padding: 1rem;
+  }
+}
+
+footer {
+  background-color: rgb(114, 203, 206);
+}
