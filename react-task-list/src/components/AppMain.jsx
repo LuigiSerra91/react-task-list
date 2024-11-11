@@ -79,23 +79,25 @@ export default function AppMain() {
     return (
         <main>
             <section className="completed">
-                <h3>current Task</h3>
+                <h3>current Task{`(${other_task.length})`}</h3>
                 <ul>
                     {other_task.map((task, index) => <li key={index}>
-                        {task.title}
-
-
+                        <strong>{task.title}</strong>
+                        <span>{task.state}</span>
+                        <p>Priority: {task.priority}</p>
+                        <p>Est. Time{task.estimatedTime}</p>
 
                     </li>)}
                 </ul>
             </section>
             <section className="other_task">
-                <h3>Completed Task</h3>
+                <h3>Completed Task{`(${completed_task.length})`}</h3>
                 <ul>
-                    {completed_task.map((task, index) => <li key={index}>
-                        {task.title}
-
-
+                    {completed_task.map((task, index) => <li key={task.id}>
+                        <strong>{task.title}</strong>
+                        <span>{task.state}</span>
+                        <p>Priority: {task.priority}</p>
+                        <p>Est. Time{task.estimatedTime}</p>
 
                     </li>)}
                 </ul>
