@@ -24,6 +24,17 @@ main {
   }
 
 
+
+  line-height: 2rem;
+  padding-left: 1rem;
+
+  span {
+    margin-left: 1rem;
+    background-color: chocolate;
+    padding: 0.5rem;
+    color: white;
+  }
+
 }
 
 footer {
