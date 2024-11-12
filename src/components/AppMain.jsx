@@ -74,7 +74,7 @@ export default function AppMain() {
     ];
 
     const completed_task = tasks.filter((task) => task.state === 'completed')
-    const other_task = tasks.filter((task) => task.state !== 'completed')
+    const other_task = tasks.filter((task) => !task.state !== 'completed')
 
     return (
         <main>
