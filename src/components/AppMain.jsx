@@ -74,14 +74,14 @@ export default function AppMain() {
     ];
 
     const completed_task = tasks.filter((task) => task.state === 'completed')
-    const other_task = tasks.filter((task) => !task.state !== 'completed')
+    const other_task = tasks.filter((task) => task.state !== 'completed')
 
     return (
         <main>
             <section className="completed">
                 <h3>current Task{` (${other_task.length})`}</h3>
                 <ul>
-                    {other_task.map((task, index) => <li key={index}>
+                    {other_task.map((task, index) => <li key={task.id}>
                         <strong>{task.title}</strong>
                         <span>{task.state}</span>
                         <p>Priority: {task.priority}</p>
